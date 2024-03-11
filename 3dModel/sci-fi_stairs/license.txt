@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sci-fi stairs
+* source:	https://sketchfab.com/3d-models/sci-fi-stairs-0ed7ec0db13140768247587a585a1574
+* author:	shtran (https://sketchfab.com/shtran)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sci-fi stairs" (https://sketchfab.com/3d-models/sci-fi-stairs-0ed7ec0db13140768247587a585a1574) by shtran (https://sketchfab.com/shtran) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

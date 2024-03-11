@@ -1,0 +1,11 @@
+Model Information:
+* title:	sphinx Commission
+* source:	https://sketchfab.com/3d-models/sphinx-commission-fc222f716171458d8420920638091973
+* author:	Vinci (https://sketchfab.com/Ninet.Vinci)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "sphinx Commission" (https://sketchfab.com/3d-models/sphinx-commission-fc222f716171458d8420920638091973) by Vinci (https://sketchfab.com/Ninet.Vinci) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

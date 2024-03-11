@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky position="0 0 0" rotation="0 90 0" scale="1 1 1" src = "images/361.webp"></a-sky>
+      <a-floor position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-floor>
+
+      <!---Player Camera--->
+      <a-camera id="cam" position="0 80 0" camera="" rotation="-18.907607239317173 -2.062648062471569 0" 
+      look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">  <a-cursor></a-cursor> </a-camera>></a-camera>
+
+      <!--plane-->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="50" height="50" material="shader: standard; roughness: 1; color=(); repeat: 30 30"></a-plane>
+    
+      <a-entity geometry="primitive: box; depth: 600; height: 20; width: 600" position="0 10 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/sand.jpeg); repeat: 1 1;"></a-entity>
+
+      <!-- Floor 1 -->
+      <a-entity geometry="primitive: box; depth: 200; height: 5; width: 200" position="0 22.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/floor.png); repeat: 1 1;"></a-entity>
+
+      <!-- Floor 2 -->
+      <a-entity id="Floor_2-top" geometry="primitive: box; depth: 154; height: 5; width: 5" position="79.5 67.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/floor.png); repeat: 1 1;"></a-entity>
+      <a-entity id="Floor_2-center" geometry="primitive: box; depth: 164; height: 5; width: 144" position="-10 67.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/floor.png); repeat: 1 1;"></a-entity>
+      <a-entity id="Floor_2-left" geometry="primitive: box; depth: 20; height: 5; width: 5" position="72 67.5 79.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/floor.png); repeat: 1 1;"></a-entity>
+      <a-entity id="Floor_2-right" geometry="primitive: box; depth: 20; height: 5; width: 5" position="72 67.5 -79.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/floor.png); repeat: 1 1;"></a-entity>
+      <a-entity id="Floor_2-between" geometry="primitive: box; depth: 94; height: 5; width: 15" position="69.5 67.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/floor.png); repeat: 1 1;"></a-entity>
+
+      <!-- Floor 3 -->
+      <a-entity geometry="primitive: box; depth: 101.5; height: 5; width: 101.5" position="0  142.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/floor.png); repeat: 1 1;"></a-entity>
+      
+      <!-- 1 -->
+      <a-entity geometry="primitive: box; depth: 210; height: 5; width: 5" position="0  22.5 102.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 21 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 210; height: 5; width: 5" position="0  22.5 -102.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 21 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 200; height: 5; width: 5" position="102.5  22.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 20 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 200; height: 5; width: 5" position="-102.5  22.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 20 1;"></a-entity>
+
+      <!-- 2 -->
+      <a-entity geometry="primitive: box; depth: 206; height: 5; width: 5" position="0  27.5 100.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 20.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 206; height: 5; width: 5" position="0  27.5 -100.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 20.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 196; height: 5; width: 5" position="100.5  27.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 19.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 196; height: 5; width: 5" position="-100.5  27.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 19.6 1;"></a-entity>
+
+      <!-- 3 -->
+      <a-entity geometry="primitive: box; depth: 202; height: 5; width: 5" position="0  32.5 98.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 20.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 202; height: 5; width: 5" position="0  32.5 -98.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 20.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 192; height: 5; width: 5" position="98.5  32.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 19.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 192; height: 5; width: 5" position="-98.5  32.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 19.2 1;"></a-entity>
+
+      <!-- 4 -->
+      <a-entity geometry="primitive: box; depth: 198; height: 5; width: 5" position="0  37.5 96.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 19.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 198; height: 5; width: 5" position="0  37.5 -96.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 19.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 188; height: 5; width: 5" position="96.5  37.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 18.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 188; height: 5; width: 5" position="-96.5  37.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 18.8 1;"></a-entity>
+
+      <!-- 5 -->
+      <a-entity geometry="primitive: box; depth: 194; height: 5; width: 5" position="0  42.5 94.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 19.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 194; height: 5; width: 5" position="0  42.5 -94.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 19.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 184; height: 5; width: 5" position="94.5  42.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 18.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 184; height: 5; width: 5" position="-94.5  42.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 18.4 1;"></a-entity>
+
+      <!-- 6 -->
+      <a-entity geometry="primitive: box; depth: 190; height: 5; width: 5" position="0  47.5 92.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 19 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 190; height: 5; width: 5" position="0  47.5 -92.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 19 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 180; height: 5; width: 5" position="92.5  47.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 18 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 180; height: 5; width: 5" position="-92.5  47.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 18 1;"></a-entity>
+
+      <!-- 7 -->
+      <a-entity geometry="primitive: box; depth: 186; height: 5; width: 5" position="0  52.5 90.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 18.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 186; height: 5; width: 5" position="0  52.5 -90.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 18.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 176; height: 5; width: 5" position="90.5  52.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 17.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 176; height: 5; width: 5" position="-90.5  52.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 17.6 1;"></a-entity>
+
+      <!-- 8 -->
+      <a-entity geometry="primitive: box; depth: 182; height: 5; width: 5" position="0  57.5 88.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 18.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 182; height: 5; width: 5" position="0  57.5 -88.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 18.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 172; height: 5; width: 5" position="88.5  57.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 17.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 172; height: 5; width: 5" position="-88.5  57.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 17.2 1;"></a-entity>
+
+      <!-- 9 -->
+      <a-entity geometry="primitive: box; depth: 178; height: 5; width: 5" position="0  62.5 86.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 17.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 178; height: 5; width: 5" position="0  62.5 -86.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 17.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 168; height: 5; width: 5" position="86.5  62.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 16.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 168; height: 5; width: 5" position="-86.5  62.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 16.8 1;"></a-entity>
+
+      <!-- 10 -->
+      <a-entity geometry="primitive: box; depth: 174; height: 5; width: 5" position="0  67.5 84.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 17.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 174; height: 5; width: 5" position="0  67.5 -84.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 17.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 164; height: 5; width: 5" position="84.5  67.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 16.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 164; height: 5; width: 5" position="-84.5  67.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 16.4 1;"></a-entity>
+      
+      <!-- 10 -->
+      <a-entity geometry="primitive: box; depth: 174; height: 5; width: 5" position="0  67.5 84.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 17.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 174; height: 5; width: 5" position="0  67.5 -84.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 17.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 164; height: 5; width: 5" position="84.5  67.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 16.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 164; height: 5; width: 5" position="-84.5  67.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 16.4 1;"></a-entity>
+
+      <!-- 11 -->
+      <a-entity geometry="primitive: box; depth: 170; height: 5; width: 5" position="0  72.5 82.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 17 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 170; height: 5; width: 5" position="0  72.5 -82.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 17 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 50; height: 5; width: 5" position="82.5  72.5 55" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 5 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 50; height: 5; width: 5" position="82.5  72.5 -55" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 5 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 160; height: 5; width: 5" position="-82.5  72.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 16 1;"></a-entity>
+
+      <!-- 12 -->
+      <a-entity geometry="primitive: box; depth: 166; height: 5; width: 5" position="0  77.5 80.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 16.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 166; height: 5; width: 5" position="0  77.5 -80.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 16.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 48; height: 5; width: 5" position="80.5  77.5 54" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 48; height: 5; width: 5" position="80.5  77.5 -54" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 156; height: 5; width: 5" position="-80.5  77.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 15.6 1;"></a-entity>
+
+      <!-- 13 -->
+      <a-entity geometry="primitive: box; depth: 162; height: 5; width: 5" position="0  82.5 78.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 16.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 162; height: 5; width: 5" position="0  82.5 -78.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 16.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 46; height: 5; width: 5" position="78.5  82.5 53" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 46; height: 5; width: 5" position="78.5  82.5 -53" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 152; height: 5; width: 5" position="-78.5  82.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 15.2 1;"></a-entity>
+
+      <!-- 14 -->
+      <a-entity geometry="primitive: box; depth: 158; height: 5; width: 5" position="0  87.5 76.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 15.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 158; height: 5; width: 5" position="0  87.5 -76.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 15.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 44; height: 5; width: 5" position="76.5  87.5 52" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 44; height: 5; width: 5" position="76.5  87.5 -52" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 148; height: 5; width: 5" position="-76.5  87.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 14.8 1;"></a-entity>
+
+      <!-- 15 -->
+      <a-entity geometry="primitive: box; depth: 154; height: 5; width: 5" position="0  92.5 74.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 15.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 154; height: 5; width: 5" position="0  92.5 -74.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 15.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 42; height: 5; width: 5" position="74.5  92.5 51" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 42; height: 5; width: 5" position="74.5  92.5 -51" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 144; height: 5; width: 5" position="-74.5  92.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 14.4 1;"></a-entity>
+
+      <!-- 16 -->
+      <a-entity geometry="primitive: box; depth: 150; height: 5; width: 5" position="0  97.5 72.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 15 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 150; height: 5; width: 5" position="0  97.5 -72.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 15 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 40; height: 5; width: 5" position="72.5  97.5 50" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 40; height: 5; width: 5" position="72.5  97.5 -50" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 140; height: 5; width: 5" position="-72.5  97.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 14 1;"></a-entity>
+
+      <!-- 17 -->
+      <a-entity geometry="primitive: box; depth: 146; height: 5; width: 5" position="0  102.5 70.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 14.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 146; height: 5; width: 5" position="0  102.5 -70.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 14.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 136; height: 5; width: 5" position="70.5  102.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 13.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 136; height: 5; width: 5" position="-70.5  102.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 13.6 1;"></a-entity>
+
+      <!-- 18 -->
+      <a-entity geometry="primitive: box; depth: 142; height: 5; width: 5" position="0  107.5 68.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 14.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 142; height: 5; width: 5" position="0  107.5 -68.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 14.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 132; height: 5; width: 5" position="68.5  107.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 13.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 132; height: 5; width: 5" position="-68.5  107.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 13.2 1;"></a-entity>
+
+      <!-- 19 -->
+      <a-entity geometry="primitive: box; depth: 138; height: 5; width: 5" position="0  112.5 66.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 13.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 138; height: 5; width: 5" position="0  112.5 -66.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 13.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 128; height: 5; width: 5" position="66.5  112.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 12.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 128; height: 5; width: 5" position="-66.5  112.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 12.8 1;"></a-entity>
+
+      <!-- 20 -->
+      <a-entity geometry="primitive: box; depth: 134; height: 5; width: 5" position="0  117.5 64.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 13.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 134; height: 5; width: 5" position="0  117.5 -64.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 13.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 124; height: 5; width: 5" position="64.5  117.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 12.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 124; height: 5; width: 5" position="-64.5  117.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 12.4 1;"></a-entity>
+
+      <!-- 21 -->
+      <a-entity geometry="primitive: box; depth: 130; height: 5; width: 5" position="0  122.5 62.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 13 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 130; height: 5; width: 5" position="0  122.5 -62.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 13 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 120; height: 5; width: 5" position="62.5  122.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 12 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 120; height: 5; width: 5" position="-62.5  122.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 12 1;"></a-entity>
+
+      <!-- 22 -->
+      <a-entity geometry="primitive: box; depth: 126; height: 5; width: 5" position="0  127.5 60.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 12.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 126; height: 5; width: 5" position="0  127.5 -60.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 12.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 116; height: 5; width: 5" position="60.5  127.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 11.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 116; height: 5; width: 5" position="-60.5  127.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 11.6 1;"></a-entity>
+
+      <!-- 23 -->
+      <a-entity geometry="primitive: box; depth: 122; height: 5; width: 5" position="0  132.5 58.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 12.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 122; height: 5; width: 5" position="0  132.5 -58.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 12.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 112; height: 5; width: 5" position="58.5  132.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 11.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 112; height: 5; width: 5" position="-58.5  132.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 11.2 1;"></a-entity>
+
+      <!-- 24 -->
+      <a-entity geometry="primitive: box; depth: 118; height: 5; width: 5" position="0  137.5 56.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 11.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 118; height: 5; width: 5" position="0  137.5 -56.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 11.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 108; height: 5; width: 5" position="56.5  137.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 10.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 108; height: 5; width: 5" position="-56.5  137.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 10.8 1;"></a-entity>
+
+      <!-- 25 -->
+      <a-entity geometry="primitive: box; depth: 114; height: 5; width: 5" position="0  142.5 54.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 11.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 114; height: 5; width: 5" position="0  142.5 -54.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 11.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 104; height: 5; width: 5" position="54.5  142.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 10.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 104; height: 5; width: 5" position="-54.5  142.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 10.4 1;"></a-entity>
+      
+      <!-- 26 -->
+      <a-entity geometry="primitive: box; depth: 110; height: 5; width: 5" position="0  147.5 52.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 11 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 110; height: 5; width: 5" position="0  147.5 -52.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 11 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 100; height: 5; width: 5" position="52.5  147.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 10 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 100; height: 5; width: 5" position="-52.5  147.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 10 1;"></a-entity>
+
+      <!-- 27 -->
+      <a-entity geometry="primitive: box; depth: 106; height: 5; width: 5" position="0  152.5 50.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 10.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 106; height: 5; width: 5" position="0  152.5 -50.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 10.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 96; height: 5; width: 5" position="50.5  152.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 9.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 96; height: 5; width: 5" position="-50.5  152.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 9.6 1;"></a-entity>
+
+      <!-- 28 -->
+      <a-entity geometry="primitive: box; depth: 102; height: 5; width: 5" position="0  157.5 48.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 10.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 102; height: 5; width: 5" position="0  157.5 -48.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 10.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 92; height: 5; width: 5" position="48.5  157.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 9.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 92; height: 5; width: 5" position="-48.5  157.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 9.2 1;"></a-entity>
+
+      <!-- 29 -->
+      <a-entity geometry="primitive: box; depth: 98; height: 5; width: 5" position="0  162.5 46.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 9.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 98; height: 5; width: 5" position="0  162.5 -46.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 9.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 88; height: 5; width: 5" position="46.5  162.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 8.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 88; height: 5; width: 5" position="-46.5  162.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 8.8 1;"></a-entity>
+
+      <!-- 30 -->
+      <a-entity geometry="primitive: box; depth: 94; height: 5; width: 5" position="0  167.5 44.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 9.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 94; height: 5; width: 5" position="0  167.5 -44.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 9.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 84; height: 5; width: 5" position="44.5  167.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 8.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 84; height: 5; width: 5" position="-44.5  167.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 8.4 1;"></a-entity>
+
+      <!-- 31 -->
+      <a-entity geometry="primitive: box; depth: 90; height: 5; width: 5" position="0  172.5 42.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 9 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 90; height: 5; width: 5" position="0  172.5 -42.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 9 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 80; height: 5; width: 5" position="42.5  172.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 80; height: 5; width: 5" position="-42.5  172.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 8 1;"></a-entity>
+
+      <!-- 32 -->
+      <a-entity geometry="primitive: box; depth: 86; height: 5; width: 5" position="0  177.5 40.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 8.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 86; height: 5; width: 5" position="0  177.5 -40.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 8.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 76; height: 5; width: 5" position="40.5  177.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 7.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 76; height: 5; width: 5" position="-40.5  177.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 7.6 1;"></a-entity>
+
+      <!-- 33 -->
+      <a-entity geometry="primitive: box; depth: 82; height: 5; width: 5" position="0  182.5 38.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 8.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 82; height: 5; width: 5" position="0  182.5 -38.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 8.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 72; height: 5; width: 5" position="38.5  182.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 7.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 72; height: 5; width: 5" position="-38.5  182.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 7.2 1;"></a-entity>
+
+      <!-- 34 -->
+      <a-entity geometry="primitive: box; depth: 78; height: 5; width: 5" position="0  187.5 36.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 7.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 78; height: 5; width: 5" position="0  187.5 -36.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 7.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 68; height: 5; width: 5" position="36.5  187.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 6.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 68; height: 5; width: 5" position="-36.5  187.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 6.8 1;"></a-entity>
+
+      <!-- 35 -->
+      <a-entity geometry="primitive: box; depth: 74; height: 5; width: 5" position="0  192.5 34.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 7.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 74; height: 5; width: 5" position="0  192.5 -34.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 7.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 64; height: 5; width: 5" position="34.5  192.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 6.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 64; height: 5; width: 5" position="-34.5  192.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 6.4 1;"></a-entity>
+
+      <!-- 36 -->
+      <a-entity geometry="primitive: box; depth: 70; height: 5; width: 5" position="0  197.5 32.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 7 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 70; height: 5; width: 5" position="0  197.5 -32.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 7 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 60; height: 5; width: 5" position="32.5  197.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 60; height: 5; width: 5" position="-32.5  197.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 6 1;"></a-entity>
+
+      <!-- 37 -->
+      <a-entity geometry="primitive: box; depth: 66; height: 5; width: 5" position="0  202.5 30.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 6.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 66; height: 5; width: 5" position="0  202.5 -30.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 6.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 56; height: 5; width: 5" position="30.5  202.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 5.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 56; height: 5; width: 5" position="-30.5  202.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 5.6 1;"></a-entity>
+
+      <!-- 38 -->
+      <a-entity geometry="primitive: box; depth: 62; height: 5; width: 5" position="0  207.5 28.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 6.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 62; height: 5; width: 5" position="0  207.5 -28.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 6.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 52; height: 5; width: 5" position="28.5  207.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 5.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 52; height: 5; width: 5" position="-28.5  207.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 5.2 1;"></a-entity>
+
+      <!-- 39 -->
+      <a-entity geometry="primitive: box; depth: 58; height: 5; width: 5" position="0  212.5 26.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 5.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 58; height: 5; width: 5" position="0  212.5 -26.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 5.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 48; height: 5; width: 5" position="26.5  212.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 48; height: 5; width: 5" position="-26.5  212.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.8 1;"></a-entity>
+
+      <!-- 40 -->
+      <a-entity geometry="primitive: box; depth: 54; height: 5; width: 5" position="0  217.5 24.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 5.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 54; height: 5; width: 5" position="0  217.5 -24.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 5.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 44; height: 5; width: 5" position="24.5  217.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 44; height: 5; width: 5" position="-24.5  217.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.4 1;"></a-entity>
+
+      <!-- 41 -->
+      <a-entity geometry="primitive: box; depth: 50; height: 5; width: 5" position="0  222.5 22.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 5 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 50; height: 5; width: 5" position="0  222.5 -22.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 5 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 40; height: 5; width: 5" position="22.5  222.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 40; height: 5; width: 5" position="-22.5  222.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4 1;"></a-entity>
+
+      <!-- 42 -->
+      <a-entity geometry="primitive: box; depth: 46; height: 5; width: 5" position="0  227.5 20.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 46; height: 5; width: 5" position="0  227.5 -20.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 36; height: 5; width: 5" position="20.5  227.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 3.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 36; height: 5; width: 5" position="-20.5  227.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 3.6 1;"></a-entity>
+
+      <!-- 43 -->
+      <a-entity geometry="primitive: box; depth: 42; height: 5; width: 5" position="0  232.5 18.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 42; height: 5; width: 5" position="0  232.5 -18.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 4.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 32; height: 5; width: 5" position="18.5  232.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 3.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 32; height: 5; width: 5" position="-18.5  232.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 3.2 1;"></a-entity>
+
+      <!-- 44 -->
+      <a-entity geometry="primitive: box; depth: 38; height: 5; width: 5" position="0  237.5 16.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 3.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 38; height: 5; width: 5" position="0  237.5 -16.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 3.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 28; height: 5; width: 5" position="16.5  237.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 2.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 28; height: 5; width: 5" position="-16.5  237.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 2.8 1;"></a-entity>
+
+      <!-- 45 -->
+      <a-entity geometry="primitive: box; depth: 34; height: 5; width: 5" position="0  242.5 14.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 3.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 34; height: 5; width: 5" position="0  242.5 -14.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 3.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 24; height: 5; width: 5" position="14.5  242.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 2.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 24; height: 5; width: 5" position="-14.5  242.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 2.4 1;"></a-entity>
+
+      <!-- 46 -->
+      <a-entity geometry="primitive: box; depth: 30; height: 5; width: 5" position="0  247.5 12.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 3 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 30; height: 5; width: 5" position="0  247.5 -12.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 3 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 20; height: 5; width: 5" position="12.5  247.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 20; height: 5; width: 5" position="-12.5  247.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 2 1;"></a-entity>
+
+      <!-- 47 -->
+      <a-entity geometry="primitive: box; depth: 26; height: 5; width: 5" position="0  252.5 10.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 2.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 26; height: 5; width: 5" position="0  252.5 -10.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 2.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 16; height: 5; width: 5" position="10.5  252.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 1.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 16; height: 5; width: 5" position="-10.5  252.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/pharaoh.jpg); repeat: 1.6 1;"></a-entity>
+
+      <!-- 48 -->
+      <a-entity geometry="primitive: box; depth: 22; height: 5; width: 5" position="0  257.5 8.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 2.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 22; height: 5; width: 5" position="0  257.5 -8.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 2.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 12; height: 5; width: 5" position="8.5  257.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 1.2 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 12; height: 5; width: 5" position="-8.5  257.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 1.2 1;"></a-entity>
+
+      <!-- 49 -->
+      <a-entity geometry="primitive: box; depth: 18; height: 5; width: 5" position="0  262.5 6.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 1.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 18; height: 5; width: 5" position="0  262.5 -6.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 1.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 8; height: 5; width: 5" position="6.5  262.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 0.8 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 8; height: 5; width: 5" position="-6.5  262.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 0.8 1;"></a-entity>
+
+      <!-- 50 -->
+      <a-entity geometry="primitive: box; depth: 14; height: 5; width: 5" position="0  267.5 4.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 1.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 14; height: 5; width: 5" position="0  267.5 -4.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 1.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 4; height: 5; width: 5" position="4.5  267.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 0.4 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 4; height: 5; width: 5" position="-4.5  267.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 0.4 1;"></a-entity>
+
+      <!-- 51 -->
+      <a-entity geometry="primitive: box; depth: 10; height: 5; width: 5" position="0  272.5 2.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 1 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 10; height: 5; width: 5" position="0  272.5 -2.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 1 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 0; height: 5; width: 5" position="2.5  272.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 0 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 0; height: 5; width: 5" position="-2.5  272.5 0" rotation="0 0 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 0 1;"></a-entity>
+
+      <a-entity geometry="primitive: box; depth: 6; height: 5; width: 5" position="0  277.5 0.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 0.6 1;"></a-entity>
+      <a-entity geometry="primitive: box; depth: 6; height: 5; width: 5" position="0  277.5 -0.5" rotation="0 90 0" scale="1 1 1" material="src: url(images/gold.jpg); repeat: 0.6 1;"></a-entity>
+
+      <!-- Stair -->
+      <a-entity>
+        <a-entity id="stairL-2" geometry="primitive: box; depth: 15; height: 5; width: 5" position="69.5  62.5 49.5" rotation="0 90 0" scale="1 1 1" material="src: color=white"></a-entity>
+        <a-entity id="stairL-3" geometry="primitive: box; depth: 15; height: 5; width: 5" position="69.5  57.5 54.5" rotation="0 90 0" scale="1 1 1" color=white></a-entity>
+        <a-entity id="stairL-4" geometry="primitive: box; depth: 15; height: 5; width: 5" position="69.5  52.5 59.5" rotation="0 90 0" scale="1 1 1" color="white"></a-entity>
+        <a-entity id="stairL-5" geometry="primitive: box; depth: 15; height: 5; width: 15" position="69.5  47.5 69.5" rotation="0 0 0" scale="1 1 1" color="white"></a-entity>
+        <a-entity id="stairL-6" geometry="primitive: box; depth: 15; height: 5; width: 5" position="59.5  42.5 69.5" rotation="0 0 0" scale="1 1 1" color="white"></a-entity>
+        <a-entity id="stairL-7" geometry="primitive: box; depth: 15; height: 5; width: 5" position="54.5  37.5 69.5" rotation="0 0 0" scale="1 1 1" color="white"></a-entity>
+        <a-entity id="stairL-8" geometry="primitive: box; depth: 15; height: 5; width: 5" position="49.5  32.5 69.5" rotation="0 0 0" scale="1 1 1" color="white"></a-entity>
+        <a-entity id="stairL-9" geometry="primitive: box; depth: 15; height: 5; width: 5" position="44.5  27.5 69.5" rotation="0 0 0" scale="1 1 1" color="white"></a-entity>
+
+        <a-entity id="stairR-2" geometry="primitive: box; depth: 15; height: 5; width: 5" position="69.5  62.5 -49.5" rotation="0 90 0" scale="1 1 1" color="white"></a-entity>
+        <a-entity id="stairR-3" geometry="primitive: box; depth: 15; height: 5; width: 5" position="69.5  57.5 -54.5" rotation="0 90 0" scale="1 1 1" color="white"></a-entity>
+        <a-entity id="stairR-4" geometry="primitive: box; depth: 15; height: 5; width: 5" position="69.5  52.5 -59.5" rotation="0 90 0" scale="1 1 1" color="white"></a-entity>
+        <a-entity id="stairR-5" geometry="primitive: box; depth: 15; height: 5; width: 15" position="69.5  47.5 -69.5" rotation="0 0 0" scale="1 1 1" color="white"></a-entity>
+        <a-entity id="stairR-6" geometry="primitive: box; depth: 15; height: 5; width: 5" position="59.5  42.5 -69.5" rotation="0 0 0" scale="1 1 1" color="white"></a-entity>
+        <a-entity id="stairR-7" geometry="primitive: box; depth: 15; height: 5; width: 5" position="54.5  37.5 -69.5" rotation="0 0 0" scale="1 1 1" color="white"></a-entity>
+        <a-entity id="stairR-8" geometry="primitive: box; depth: 15; height: 5; width: 5" position="49.5  32.5 -69.5" rotation="0 0 0" scale="1 1 1" color="white"></a-entity>
+        <a-entity id="stairR-9" geometry="primitive: box; depth: 15; height: 5; width: 5" position="44.5  27.5 -69.5" rotation="0 0 0" scale="1 1 1" color="white"></a-entity>
+
+        <a-entity id="wall_1" geometry="primitive: box; depth: 164; height: 40; width: 5" position="-79.5 45 0" rotation="0 0 0" scale="1 1 1" material= "src: url(images/blackStone.jpg)"></a-entity>
+        <a-entity id="wall_2" geometry="primitive: box; depth: 159; height: 40; width: 5" position="2.5 45 79.5" rotation="0 90 0" scale="1 1 1" material= "src: url(images/blackStone.jpg)"></a-entity>
+        <a-entity id="wall_3" geometry="primitive: box; depth: 159; height: 40; width: 5" position="2.5 45 -79.5" rotation="0 90 0" scale="1 1 1" material= "src: url(images/blackStone.jpg)"></a-entity>
+        <a-entity id="wall_4" geometry="primitive: box; depth: 124; height: 40; width: 20" position="52 45 0" rotation="0 0 0" scale="1 1 1" material= "src: url(images/blackStone.jpg)"></a-entity>
+        <a-entity id="wall_5" geometry="primitive: box; depth: 154; height: 40; width: 5" position="79.5 45 0" rotation="0 0 0" scale="1 1 1" material= "src: url(images/blackStone.jpg)"></a-entity>
+      </a-entity>
+      
+      <!-- <a-video id="video" geometry="primitive: box; width: 1; height: 20; depth: 30" position="30 167.5 0" rotation="0 0 0" scale="0 0 0" src="videos/pyramid.mp4"></a-video> -->
+
+      <!-- Pool -->
+      <a-entity id="Display" position="-10 27.5 0">
+        <a-video geometry="primitive: box; depth: 50; height: 6; width: 30" position="0 0 0" rotation="0 0 0" scale="1 1 1" src="videos/BigBang.mp4"></a-video>
+        <a-entity geometry="primitive: box; depth: 60; height: 5; width: 40" position="0 0 0" rotation="0 0 0" scale="1 1 1" material= "src: url(images/blackStone.jpg)"></a-entity>
+      </a-entity>
+
+      <!-- Picture -->
+      <a-entity id="Picture" geometry="primitive: box; depth: 80; height: 40; width: 1" position="41.5 45 0" rotation="0 0 0" scale="1 1 1" material= "src: url(images/OldPyramid.jpg)"></a-entity>
+
+      <!-- Gate of Pyramid -->
+      <a-entity id="Gate" scale="1 1 1">
+        <a-entity id="Gate" geometry="primitive: box; depth: 5; height: 25; width: 50" position="60 82.5 27.5" rotation="0 0 0" material= "src: url(images/pharaoh.jpg)"></a-entity>
+        <a-entity id="Gate" geometry="primitive: box; depth: 5; height: 25; width: 50" position="60 82.5 -27.5" rotation="0 0 0" material="src: url(images/pharaoh.jpg)"></a-entity>
+        <a-entity id="Gate" geometry="primitive: box; depth: 60; height: 5; width: 50" position="60 97.5 0" rotation="0 0 0" material="src: url(images/pharaoh.jpg);"></a-entity>
+      </a-entity>
+
+      <!-- 2 sides of the stairs -->
+      <a-entity>
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 42" position="106 72.5 27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 4.2 1;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 42" position="106 72.5 -27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 4.2 1;"></a-entity>
+
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 47" position="110.5 67.5 27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 4.7 2;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 47" position="110.5 67.5 -27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 4.7 2;"></a-entity>
+
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 52" position="115 62.5 27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 5.2 1;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 52" position="115 62.5 -27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 5.2 1;"></a-entity>
+
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 57" position="119.5 57.5 27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 5.7 1;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 57" position="119.5 57.5 -27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 5.7 1;"></a-entity>
+
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 62" position="124 52.5 27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 6.2 1;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 62" position="124 52.5 -27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 6.2 1;"></a-entity>
+
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 67" position="128.5 47.5 27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 6.7 1;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 67" position="128.5 47.5 -27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 6.7 1;"></a-entity>
+
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 72" position="133 42.5 27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 7.2 1;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 72" position="133 42.5 -27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 7.2 1;"></a-entity>
+
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 82" position="140 37.5 27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 8.2 2;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 5; height: 5; width: 82" position="140 37.5 -27.5" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone2.jpg); repeat: 8.2 2;"></a-entity>
+      </a-entity>
+      
+      
+      <!-- Steps of the stairs -->
+      <a-entity>
+        <a-entity geometry="primitive: box; depth: 50; height: 5; width: 5" position="89.5 67.5 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 1 5;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 50; height: 5; width: 5" position="94.5 62.5 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 1 5;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 50; height: 5; width: 5" position="99.5 57.5 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 1 5;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 50; height: 5; width: 5" position="104.5 52.5 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 1 5;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 50; height: 5; width: 5" position="109.5 47.5 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 1 5;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 50; height: 5; width: 5" position="114.5 42.5 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 1 5;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 50; height: 5; width: 5" position="119.5 37.5 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 1 5;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 50; height: 5; width: 5" position="124.5 32.5 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 1 5;"></a-entity>
+        <a-entity geometry="primitive: box; depth: 60; height: 5; width: 60" position="157 32.5 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 2 2;"></a-entity>
+      </a-entity>
+      
+      <!-- Buttons for moving up/down stairs 0 -> 1 -->
+      <a-box id="up1" src="./image/up.jpg" geometry="depth: 0.5; height: 0.5; width: 0.5" position="170 39 24.75" class="intersectable" material="" rotation="0 0 0"></a-box>
+      <a-box id="down1" src="./image/down.jpg" geometry="depth: 0.5; height: 0.5; width: 0.5" position="80 80.5 24.75" class="intersectable" material="" rotation="0 0 0"></a-box>
+      
+      <script>
+      var cam = document.querySelector('#cam');
+      var ch1 = document.querySelector('#up1');
+      var ch2 = document.querySelector('#down1'); 
+
+      ch1.addEventListener('click', function () {
+        cam.setAttribute('position' , {x: 84.4, y: 80.7, z: 24.975});
+        cam.setAttribute('rotation' , {x: 0, y: 0, z: 0});
+      });
+      ch2.addEventListener('click', function () {
+        cam.setAttribute('position' , {x: 180, y: 39, z: 24.975});
+        cam.setAttribute('rotation' , {x: 0, y: 0, z: 0});
+      });
+      </script>
+
+      <!-- Buttons for moving up/down stairs -1 -> 2 -->
+      <a-box id="up2" src="./image/up.jpg" geometry="depth: 0.5; height: 0.5; width: 0.5" position="-55 27.5 0" class="intersectable" material="" rotation="0 0 0"></a-box>
+      <a-box id="down2" src="./image/down.jpg" geometry="depth: 0.5; height: 0.5; width: 0.5" position="35 150 25" class="intersectable" material="" rotation="0 0 0"></a-box>
+      
+      <script>
+      var cam = document.querySelector('#cam');
+      var ch3 = document.querySelector('#up2');
+      var ch4 = document.querySelector('#down2'); 
+
+      ch3.addEventListener('click', function () {
+        cam.setAttribute('position' , {x: 35, y: 150, z: 25});
+        cam.setAttribute('rotation' , {x: 0, y: 0, z: 0});
+      });
+      ch4.addEventListener('click', function () {
+        cam.setAttribute('position' , {x: -55, y: 30, z: 0});
+        cam.setAttribute('rotation' , {x: 0, y: 0, z: 0});
+      });
+      </script>
+
+      <!-- Buttons for moving up/down stairs 1 -> -1 -->
+      <a-box id="up-1" src="./image/up.jpg" geometry="depth: 0.5; height: 0.5; width: 0.5" position="77.75 78 37" class="intersectable" material="" rotation="0 0 0"></a-box>
+      <a-box id="down-1" src="./image/down.jpg" geometry="depth: 0.5; height: 0.5; width: 0.5" position="35 47 76.75" class="intersectable" material="" rotation="0 0 0"></a-box>
+      
+      <script>
+      var cam = document.querySelector('#cam');
+      var ch5 = document.querySelector('#up-1');
+      var ch6 = document.querySelector('#down-1');
+
+      ch5.addEventListener('click', function () {
+        cam.setAttribute('position' , {x: 35, y: 47, z: 75});
+        cam.setAttribute('rotation' , {x: 0, y: 0, z: 0});
+      });
+      ch6.addEventListener('click', function () {
+        cam.setAttribute('position' , {x: 77.75, y: 78, z: 40});
+        cam.setAttribute('rotation' , {x: 0, y: 0, z: 0});
+      });
+      </script>
+     
+      <!-- Door -->
+      <a-entity position="8 0 0">
+        <a-entity id="doorPivotLeft" position="70 70 25">
+          <a-entity id="doorLeft" geometry="primitive: box; width: 25; height: 25; depth: 5" position="0 12.5 -12.5" rotation="0 90 0" material="src: url(images/blackStone.jpg)"></a-entity>
+        </a-entity>
+
+        <a-entity id="doorPivotRight" position="70 70 -25">
+          <a-entity id="doorRight" geometry="primitive: box; width: 25; height: 25; depth: 5" position="0 12.5 12.5" rotation="0 90 0" material="src: url(images/blackStone.jpg)"></a-entity>
+        </a-entity>
+
+        <script>
+          // Lấy thẻ cánh cửa và điểm quay của từng cánh cửa
+          var doorLeft = document.querySelector('#doorLeft');
+          var doorPivotLeft = document.querySelector('#doorPivotLeft');
+          var doorRight = document.querySelector('#doorRight');
+          var doorPivotRight = document.querySelector('#doorPivotRight');
+
+          // Tạo biến để kiểm tra trạng thái mở hoặc đóng của cửa
+          var isOpen = false;
+          // Khai báo biến cho góc quay hiện tại của cửa
+          var currentAngle = 0;
+
+          // Hàm để mở hoặc đóng cửa
+          function toggleDoor() {
+            if (isOpen) {
+              // Nếu cửa đang mở, đóng cửa lại
+              isOpen = false;
+              var closeInterval = setInterval(function() {
+                currentAngle -= 1; // Giảm góc quay
+                doorPivotLeft.setAttribute('rotation', '0 ' + currentAngle + ' 0');
+                doorPivotRight.setAttribute('rotation', '0 ' + (-currentAngle) + ' 0'); // Đảo chiều quay của cửa phải
+                if (currentAngle <= 0) {
+                  clearInterval(closeInterval); // Dừng khi đóng hết cửa
+                }
+              }, 50); // Tốc độ quay của cánh cửa khi đóng
+            } else {
+              // Nếu cửa đang đóng, mở cửa
+              isOpen = true;
+              var openInterval = setInterval(function() {
+                currentAngle += 1; // Tăng góc quay
+                doorPivotLeft.setAttribute('rotation', '0 ' + currentAngle + ' 0');
+                doorPivotRight.setAttribute('rotation', '0 ' + (-currentAngle) + ' 0'); // Đảo chiều quay của cửa phải
+                if (currentAngle >= 90) {
+                  clearInterval(openInterval); // Dừng khi mở hết cửa
+                }
+              }, 50); // Tốc độ quay của cánh cửa khi mở
+            }
+          }
+          // Thêm sự kiện click cho cánh cửa
+          doorLeft.addEventListener('click', toggleDoor);
+        </script>
+      </a-entity>
+
+      <!-- Models -->
+      <a-sphere id="UFO" class="intersectable" animation="property: rotation; dur: 10000; speed:1; from: 0 0 0; to: 0 360 0; easing: linear; loop: true;">
+        <a-entity gltf-model="./3dModel/UFO/scene.gltf" position="200 300 0" rotation="0 60 0" scale="10 10 10"></a-entity>
+      </a-sphere>
+
+      <a-sphere id="power_control_panel_magical" class="intersectable" animation="property: rotation; dur: 10000; speed:1; from: 0 0 0; to: 0 360 0; easing: linear; loop: true;">
+        <a-entity gltf-model="./3dModel/power_control_panel_magical/scene.gltf" position="0 0 0" rotation="0 0 0" scale="50 50 50"></a-entity>
+      </a-sphere>
+
+      <!-- <a-entity gltf-model="./3dModel/Mummy/scene.gltf" position="-50 72 -10" rotation="0 180 -90" scale="10 10 10"></a-entity> -->
+      <a-entity id="Sphinx" gltf-model="./3dModel/sphinx/scene.gltf" position="-30 72 0" rotation="0 90 0" scale="10 10 10"></a-entity>
+      
+      <a-sphere id="Teleport" class="intersectable" position="-55 23 0" animation="property: rotation; dur: 10000; speed:1; from: 0 0 0; to: 0 360 0; easing: linear; loop: true;">
+        <a-entity gltf-model="./3dModel/teleport/scene.gltf" position="0 0 0" rotation="0 0 0" scale="0.05 0.05 0.05"></a-entity>
+      </a-sphere>
+
+      <a-video id="Golden" gltf-model="./3dModel/golden_pharaoh/scene.gltf" position="0 90 0" rotation="0 0 0" scale="1 1 1"></a-video>
+
+      <!-- <a-sphere id="power_control_panel_magical" class="intersectable" animation="property: rotation; dur: 10000; speed:1; from: 0 0 0; to: 0 360 0; easing: linear; loop: true;">
+        <a-entity id="SolarSystem" gltf-model="./3dModel/SolarSystem.glb" animation-mixer position="0 90 0" rotation="0 0 0" scale="1 1 1" ></a-entity>
+      </a-sphere> -->
+
+      <!-- <a-entity id="stargate_1" gltf-model="./3dModel/stargate/scene.gltf" position="0 100 0" rotation="0 0 0" scale="10 10 10" class="intersectable" 
+      animation="property: rotation; dur: 10000; speed:1; from: 0 0 0; to: 0 360 0; easing: linear; loop: true;"></a-entity> -->
+
+      <!-- <a-sphere id="stargate_2" position="0 100 0" rotation="0 0 0" scale="1 1 1" class="intersectable" animation="property: rotation; dur: 20000; speed:5; from: 100 0 0; to: 360 0 360; easing: linear; loop: true;">
+        <a-entity scale="8 8 8" gltf-model="./3dModel/stargate/scene.gltf" ></a-entity>
+      </a-sphere>
+
+      <a-sphere id="stargate_3" position="0 100 0" rotation="0 0 0" scale="1 1 1" class="intersectable" animation="property: rotation; dur: 30000; speed:10; from: 0 0 100; to: 0 360 360; easing: linear; loop: true;">
+        <a-entity scale="6 6 6" gltf-model="./3dModel/stargate/scene.gltf" ></a-entity>
+      </a-sphere>
+
+      <a-sphere id="stargate_4" position="0 100 0" rotation="0 0 0" scale="1 1 1" class="intersectable" animation="property: rotation; dur: 40000; speed:15; from: 0 0 0; to: 0 0 0; easing: linear; loop: true;">
+        <a-entity scale="4 4 4" gltf-model="./3dModel/stargate/scene.gltf" ></a-entity>
+      </a-sphere> -->
+
+      <!-- <a-entity id="CeilingFan" obj-model="mtl: assets/Fan/540 Ceiling Fan.mtl; obj: assets/Fan/540 Ceiling Fan.obj" position="1.15557 6.00712 12.96484" rotation="0 46.32879561357526 0" scale="0.01 0.01 0.01" animation="property: rotation; dur: 1500; from: 0 0 0; to: 0 360 0; easing: linear; loop: true;"></a-entity> -->
+
+      <a-entity id="Pillar_1" position="-67 27.5 67">
+        <a-entity id="Pillar_Down" geometry="primitive: box; depth: 20; height: 5; width: 20" position="0 0 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 2 2;"></a-entity>
+        <a-cylinder position="0 17.5 0" radius="7" height="40" color="red"></a-cylinder>
+        <a-entity id="Pillar_Up" geometry="primitive: box; depth: 20; height: 5; width: 20" position="0 35 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 2 2;"></a-entity>
+      </a-entity>
+
+      <a-entity id="Pillar_2" position="-67 27.5 -67">
+        <a-entity id="Pillar_Down" geometry="primitive: box; depth: 20; height: 5; width: 20" position="0 0 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 2 2;"></a-entity>
+        <a-cylinder position="0 17.5 0" radius="7" height="40" color="red"></a-cylinder>
+        <a-entity id="Pillar_Up" geometry="primitive: box; depth: 20; height: 5; width: 20" position="0 35 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 2 2;"></a-entity>
+      </a-entity>
+
+      <a-entity id="Pillar_3" position="32 27.5 -51">
+        <a-entity id="Pillar_Down" geometry="primitive: box; depth: 20; height: 5; width: 20" position="0 0 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 2 2;"></a-entity>
+        <a-cylinder position="0 17.5 0" radius="7" height="40" color="red"></a-cylinder>
+        <a-entity id="Pillar_Up" geometry="primitive: box; depth: 20; height: 5; width: 20" position="0 35 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 2 2;"></a-entity>
+      </a-entity>
+
+      <a-entity id="Pillar_4" position="32 27.5 51">
+        <a-entity id="Pillar_Down" geometry="primitive: box; depth: 20; height: 5; width: 20" position="0 0 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 2 2;"></a-entity>
+        <a-cylinder position="0 17.5 0" radius="7" height="40" color="red"></a-cylinder>
+        <a-entity id="Pillar_Up" geometry="primitive: box; depth: 20; height: 5; width: 20" position="0 35 0" rotation="0 0 0" scale="1 1 1" material="  src: url(images/stone1.jpg); repeat: 2 2;"></a-entity>
+      </a-entity>
+
+
+
+    </a-scene>
+  </body>
+</html>
